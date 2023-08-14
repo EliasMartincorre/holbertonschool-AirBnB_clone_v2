@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" first file of flask """
+""" first file of flask for minimal aplication """
 # import Flask
 from flask import Flask
 # create an instance of Flask
