@@ -35,7 +35,7 @@ def func(text):
 def ptyon(text='is_cool'):
     """ display  """
     text = text.replace('_', ' ')
-    return f"python {text}"
+    return f"Python {text}"
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
