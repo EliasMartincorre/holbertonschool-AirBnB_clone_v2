@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-""" first file of flask for minimal aplication """
-# import Flask
+""" creation of minimal flask aplication"""
+# Import Flask
 from flask import Flask
-# create an instance of Flask
+
+# Create an instance of Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashe=False)
-def home():
-    """ first mensaje """
-    return "Hello HBNB!"
+@app.route('/', strict_slashes=False)
+def hello():
+    """ Display "Hello HBNB!" """
+    return 'Hello HBNB!'
 
 
 # Run the app on 0.0.0.0, port 5000
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
